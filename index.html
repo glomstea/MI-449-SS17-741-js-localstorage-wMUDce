@@ -1,0 +1,20 @@
+     <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Local Storage</title>
+    <link href="style.css" rel="stylesheet">
+    <!--Includes a button that when clicked, will toggle the website between day and night themes
+        When a user changes the theme, their choice is remembered in localStorage
+        The class on the body element is always up-to-date with the current theme (either day-theme or night-theme) — you can use document.body.setAttribute('class', 'some-class-name') to set the class on the body
+        When the body has the class day-theme, the background of the website is light-colored, with a darker color for the text
+        When the body has the class night-theme, the background of the website is a very dark color, with a lighter color for the text
+        Somewhere on the page, the user is told how many times they've visited the website (starting with 1 the first time)-->
+  </head>
+  <body class="light">
+    <p> Welcome to my website. Feel free to browse it in either a light or dark theme.</p>
+    <button id="switch"> Click to change theme. </button>
+    <p> You have visited this page <div id="number"></div> times</p>
+    <script src="script.js"></script>
+  </body>
+</html>
