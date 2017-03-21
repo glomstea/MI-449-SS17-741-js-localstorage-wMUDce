@@ -1,6 +1,6 @@
 var num = parseInt(window.localStorage.getItem('visits'))
 
-if (num === null) {
+if (!num || isNaN(num)) {
   num = 0
 }
 
@@ -15,7 +15,7 @@ changeButton.addEventListener('click', changeFunction)
 
 var changeVariable = parseInt(window.localStorage.getItem('choice'))
 
-if (changeVariable === null) {
+if (!changeVariable || isNaN(changeVariable)) {
   changeVariable = -1
 }
 if (changeVariable === 1) {
