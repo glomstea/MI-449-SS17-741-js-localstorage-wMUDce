@@ -20,19 +20,18 @@ if (!changeVariable || isNaN(changeVariable)) {
 }
 if (changeVariable === 1) {
   document.body.setAttribute('class', 'dark')
-}
-if (changeVariable === -1) {
+} else {
   document.body.setAttribute('class', 'light')
 }
 function changeFunction () {
   if (changeVariable === -1) {
     document.body.setAttribute('class', 'dark')
     window.alert('Black Theme.')
-    changeVariable = changeVariable * -1
-  } else if (changeVariable === 1) {
+    changeVariable *= -1
+  } else {
     document.body.setAttribute('class', 'light')
     window.alert('Light Theme.')
-    changeVariable = changeVariable * -1
+    changeVariable *= -1
   }
   window.localStorage.setItem('choice', changeVariable)
 }
